@@ -1,0 +1,42 @@
+{
+  "resnet": {
+    "dataset" : "cifar10",
+    "numclasses": 10,
+    "baseline_flops": [74135552],
+    "flops": [23725440, 28476800, 62066176, 74135552],
+    "backbone_accuracy": 86.91,
+    "optimal_threshold": [0.67,0.52,0.55],
+    "optimal_threshold_conf": [0.83,0.88,0.8],
+     "optimal_global_threshold_conf":0.83,
+    "optimal_global_threshold":0.72,
+    "weights": [0.8, 0.1, 0.1]
+  },
+  "msdnet": {
+     "dataset" : "cifar100",
+    "numclasses": 100,
+    "baseline_flops": [58805487089],
+    "flops": [12588347072, 22536907008, 42661994592, 58805487089],
+    "backbone_accuracy": 72.67,
+    "optimal_threshold": [0.58,0.55,0.57],
+    "optimal_threshold_conf": [0.65,0.61,0.66],
+     "optimal_global_threshold_conf":0.58,
+    "optimal_global_threshold":0.65,
+    "weights": [0.7,  0.2, 0.1]
+  },
+  "mobilenet": {
+     "dataset" : "imagenet",
+    "numclasses": 1000,
+    "baseline_flops": [6442160],
+    "flops": [693776, 1490416, 2113776, 6442160],
+    "backbone_accuracy": 82.06,
+    "optimal_threshold": [0.65,0.55,0.515],
+    "optimal_threshold_conf": [0.72,0.8,0.88],
+    "optimal_global_threshold_conf":0.65,
+    "optimal_global_threshold":0.72,
+    "weights": [0.8,0.15,0.05]
+  }
+
+
+}
+
+
